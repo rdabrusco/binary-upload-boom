@@ -1,20 +1,23 @@
-# Install
+# Binary Upload Boom
+This is a very basic social media full stack web application. You can create an account, create posts, make comments,
+as well as like other posts. 
 
-`npm install`
 
----
 
-# Things to add
+## How It's Made:
 
-- Create a `.env` file in config folder and add the following as `key = value`
-  - PORT = 2121 (can be any port example: 3000)
-  - DB_STRING = `your database URI`
-  - CLOUD_NAME = `your cloudinary cloud name`
-  - API_KEY = `your cloudinary api key`
-  - API_SECRET = `your cloudinary api secret`
+**Tech used:** HTML, CSS, JavaScript, Express, Multer, Cloudinary
 
----
+The server is made using Express.js, using Multer and Cloudinary to handle photo file uploads. It utilizes multiple models, one for Users, Posts, and Comments, and uses Mongoose to be the interface with MongoDB. 
 
-# Run
+## Optimizations
 
-`npm start`
+Other than making it look better, I would improve the logic behind likes, as well as add the ability to reference other
+posts in the post
+
+## Lessons Learned:
+
+I got a better understanding of using Multer as well as Cloudinary to upload and serve images quickly and easily, as well as using the local passport stategy for authentification. 
+
+
+
